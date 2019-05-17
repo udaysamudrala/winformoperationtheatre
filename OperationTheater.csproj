@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5FBF2294-074D-4FAB-A2B6-1435DB2D4BBB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Allocate Resources.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Allocate Resources.Designer.cs">
+      <DependentUpon>Allocate Resources.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Billing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Billing.Designer.cs">
+      <DependentUpon>Billing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BLL LOGIN.cs" />
+    <Compile Include="Doctors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctors.Designer.cs">
+      <DependentUpon>Doctors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FieldValidation.cs" />
+    <Compile Include="Forget Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forget Password.Designer.cs">
+      <DependentUpon>Forget Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GetLoginID.cs" />
+    <Compile Include="OPERATION_THEATREDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OPERATION_THEATREDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OPERATION_THEATREDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OPERATION_THEATREDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OPERATION_THEATREDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OPERATION_THEATREDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OPERATION_THEATREDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OPERATION_THEATREDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OPERATION_THEATREDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OPERATION_THEATREDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Patient Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient Details.Designer.cs">
+      <DependentUpon>Patient Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Post-Operation Patient Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Post-Operation Patient Details.Designer.cs">
+      <DependentUpon>Post-Operation Patient Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientregistrationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientregistrationForm.Designer.cs">
+      <DependentUpon>PatientregistrationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pre_Operation_Patient_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pre_Operation_Patient_Details.Designer.cs">
+      <DependentUpon>Pre_Operation_Patient_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Allocate Resources.resx">
+      <DependentUpon>Allocate Resources.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Billing.resx">
+      <DependentUpon>Billing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctors.resx">
+      <DependentUpon>Doctors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forget Password.resx">
+      <DependentUpon>Forget Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient Details.resx">
+      <DependentUpon>Patient Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Post-Operation Patient Details.resx">
+      <DependentUpon>Post-Operation Patient Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientregistrationForm.resx">
+      <DependentUpon>PatientregistrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pre_Operation_Patient_Details.resx">
+      <DependentUpon>Pre_Operation_Patient_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff Add.resx">
+      <DependentUpon>Staff Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff Home.resx">
+      <DependentUpon>Staff Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff Registration Form.resx">
+      <DependentUpon>Staff Registration Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staffdetails_Form.resx">
+      <DependentUpon>staffdetails_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STAFFVIEW.resx">
+      <DependentUpon>STAFFVIEW.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="OPERATION_THEATREDataSet.xsc">
+      <DependentUpon>OPERATION_THEATREDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OPERATION_THEATREDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OPERATION_THEATREDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OPERATION_THEATREDataSet.xss">
+      <DependentUpon>OPERATION_THEATREDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OPERATION_THEATREDataSet1.xsc">
+      <DependentUpon>OPERATION_THEATREDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="OPERATION_THEATREDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OPERATION_THEATREDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OPERATION_THEATREDataSet1.xss">
+      <DependentUpon>OPERATION_THEATREDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Staff Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff Add.designer.cs">
+      <DependentUpon>Staff Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff Home.Designer.cs">
+      <DependentUpon>Staff Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff Registration Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff Registration Form.Designer.cs">
+      <DependentUpon>Staff Registration Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="staffdetails_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staffdetails_Form.designer.cs">
+      <DependentUpon>staffdetails_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="STAFFVIEW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STAFFVIEW.designer.cs">
+      <DependentUpon>STAFFVIEW.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="OPERATION_THEATREDataSet2.xsc">
+      <DependentUpon>OPERATION_THEATREDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="OPERATION_THEATREDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OPERATION_THEATREDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OPERATION_THEATREDataSet2.xss">
+      <DependentUpon>OPERATION_THEATREDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="OPERATION_THEATREDataSet3.xsc">
+      <DependentUpon>OPERATION_THEATREDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="OPERATION_THEATREDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OPERATION_THEATREDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OPERATION_THEATREDataSet3.xss">
+      <DependentUpon>OPERATION_THEATREDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="OPERATION_THEATREDataSet4.xsc">
+      <DependentUpon>OPERATION_THEATREDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="OPERATION_THEATREDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OPERATION_THEATREDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OPERATION_THEATREDataSet4.xss">
+      <DependentUpon>OPERATION_THEATREDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\apolloBlr-9.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

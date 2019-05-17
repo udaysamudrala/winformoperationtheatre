@@ -1,0 +1,80 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Data.SqlClient;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+namespace WindowsFormsApplication1
+{
+    public partial class LoginForm : Form
+    {
+        public LoginForm()
+        {
+            InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //BLL_LOGIN bll = new BLL_LOGIN();
+            //bll.Authenticate(comboBox1.SelectedItem.ToString(),textBox1.Text, textBox1.Text );
+        Boolean flag = true;
+        while (flag)
+        {
+            if (txtpwd.TextLength == 0)
+            {
+                MessageBox.Show("password should be not be blank");
+                flag = false;
+            }
+            else
+            {
+
+                if (txt_loginid.Text == "Admin")
+                {
+
+                    AdminForm af = new AdminForm();
+                    af.Show();
+
+                }
+                else
+                    if (txt_loginid.Text == "staff")
+                    {
+                        Staff_Home SH = new Staff_Home();
+                        SH.Show();
+                    }
+            }
+        }
+
+                    
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
